@@ -1,0 +1,20 @@
+package class_1.FirstProgram;
+public class A 
+{
+	public static void main(String[] args) 
+	{
+		
+		double total = add(10.11,20); // assigning a variable for return value which is not necessary 
+				
+		System.out.println("Sum is " + total); // printing sum using a separate variable
+	}
+	
+	public static double add(double a, int b)
+	{
+		double Sum;
+		Sum = a + b ;
+		return Sum;
+		
+	}
+
+}

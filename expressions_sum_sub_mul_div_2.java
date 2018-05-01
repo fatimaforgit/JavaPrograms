@@ -1,0 +1,18 @@
+class expressions_sum_sub_mul_div_2
+{
+	public static void main(String[] args)  // it will concatinate only if any of the operand is a string
+	{
+		System.out.println("Hello"+" "+"there");  // Here concatination takes place. Expected result: Hello there
+		System.out.println("Say"+10);  // one string + any other literal converts second one into string first and then outputs result. Expected result: Say10
+		System.out.println("Say"+10+10);  // as we use in calculator, precedance works here from left to right. Expected result: Say1010
+		System.out.println("Say"+(10+10));  // highest precedance here is brackets hence result is "Say"+20=Say20
+		System.out.println(10+10+"Say"); // prededance works from left to right hence evaluation is done from left to right hence result is 20+"Say"=20Say
+		System.out.println("Say"+7.5);
+		System.out.println("Say"+'A');
+		System.out.println("Say"+true);
+		System.out.println("Say"+false);
+		System.out.println("Say"+'/');
+		System.out.println("Say"+null);
+		System.out.println("Say"+' '+"Space");
+	}
+}

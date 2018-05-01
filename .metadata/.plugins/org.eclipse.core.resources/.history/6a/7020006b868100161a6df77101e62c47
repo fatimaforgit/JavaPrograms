@@ -1,0 +1,65 @@
+package SeleniumTraining;
+
+import java.util.Iterator;
+
+//Launch popuptest.com
+//Click 'Multi-PopUp Test #2 '
+//Print the number of windows opened
+//Close all the windows but not the parent window and the child window which has background color "#00C957"
+//Print the page URL and Title and the closed windows
+//Take the snapshot of the windows which are open.
+
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Pop_up_Child_Window_pop_up_example_4 
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://popuptest.com/popup3.html");
+		
+//		driver.findElement(By.linkText("Multi-PopUp Test #2")).click();
+		
+		Set<String> windowIDs = driver.getWindowHandles();
+		Thread.sleep(2000);
+		
+		System.out.println("number of windows opened --> "+ windowIDs.size());
+		
+		Iterator<String> it = windowIDs.iterator();
+		String parent  = it.next();
+		String child  = it.next();
+driver.switchTo().window(child);
+Thread.sleep(2000);
+driver.manage().window().maximize();
+		
+		
+//		while(it.hasNext())
+//		{
+//			String child  = it.next();
+//			driver.switchTo().window(child);
+//			Thread.sleep(2000);
+//			driver.manage().window().maximize();
+	
+//			WebElement attri = driver.findElement(By.xpath("//img[@src='/images/popup.gif']"));
+//			String bgOfChild1 = attri.getAttribute("bgcolor");
+//			System.out.println(bgOfChild1);
+//			if(!bgOfChild1.equals("#FF6633"))
+//			{
+//				driver.close();
+//			}
+//		}
+		
+		
+		
+	}
+
+}

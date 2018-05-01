@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;SeleniumTraining.Rough_Sheet_In_Selenium&apos; to &apos;Rough_Sheet_In_Selenium_ren&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumProject&apos;&#x0D;&#x0A;- Original element: &apos;SeleniumTraining.Rough_Sheet_In_Selenium&apos;&#x0D;&#x0A;- Renamed element: &apos;SeleniumTraining.Rough_Sheet_In_Selenium_ren&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Rough_Sheet_In_Selenium&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;SeleniumTraining{Rough_Sheet_In_Selenium.java[Rough_Sheet_In_Selenium" matchStrategy="1" name="Rough_Sheet_In_Selenium_ren" qualified="false" references="true" similarDeclarations="false" stamp="1470379444804" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,30 @@
+package class_1.FirstProgram;
+
+public class Area_Of_A_Circle_2
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Circle c=new Circle(); // for calling or using variables of class outside this class, this is declared
+		c.findarea();
+
+	}
+
+}
+	
+	class Circle  //note this class is declared outside the above class
+	{
+		double radius;
+		double area;
+		static double PI=3.14;
+		
+		public static void findarea(double r)
+		{
+			radius=r;
+			area = PI * radius * radius ;
+			System.out.println(area);
+		}
+	}
+
+

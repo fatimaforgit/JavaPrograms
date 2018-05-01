@@ -1,0 +1,40 @@
+package SeleniumTraining;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Pop_up_Child_Window_pop_up_example_1 
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://www.google.com");
+
+		String windowID = driver.getWindowHandle();
+		System.out.println(windowID);
+		
+		
+		WebElement ele = driver.findElement(By.linkText("Gmail"));
+		Actions act = new Actions(driver);
+		act.contextClick(ele).perform();
+		ele.sendKeys("W");		
+		
+		driver.switchTo().window(driver.getWindowHandle());
+		
+		driver.get("http://www.google.com");
+
+		String windowID1 = driver.getWindowHandle();
+		System.out.println(windowID1);
+		
+	}
+
+}

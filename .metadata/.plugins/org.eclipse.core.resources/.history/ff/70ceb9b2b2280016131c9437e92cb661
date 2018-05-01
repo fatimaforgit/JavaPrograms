@@ -1,0 +1,39 @@
+package class_1.FirstProgram;
+
+public class Example_MethodOverloading 
+{
+
+	public static void main(String[] args) 
+	{
+		min(3.3,2.2);
+		
+	}
+	
+	//for int values
+	public static void min(int x, int y) //creating method 
+	{
+		System.out.println("min for 'integer' values is called");
+	} 
+
+	//for double and int values, by default the java compiler will convert int y to double y
+	public static void min(double x, int y) //method 'min' is overloaded
+	{
+		System.out.println("min for 'double' values is called");
+	}
+	
+	//for int and double values, by default the java compiler will convert int x to double x
+	public static void min(int x, double y) //method 'min' is overloaded again 
+	{
+		System.out.println("min for 'double' values is called");
+	}
+	
+	/*if both the values sent/given are integer then none of the above method will be called 
+	 * and a complile time error will pop up 
+	 * error: "Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+		The method min(double, int) in the type Example_MethodOverloading is not applicable for the arguments (double, double)"
+	 * Such a issue/case is called Ambiguous Overloading
+	 * solution is to create another method overloading which is appropriate to the requirement
+	 */
+	
+		
+}

@@ -1,0 +1,12 @@
+package testSuite;
+public class Rough 
+{
+	public static void main(String arg[])
+	{
+		String path = System.getProperty("user.dir");
+		System.out.println(path);
+			Syste.setProperty("webdriver.ie.driver", path/)
+	}
+
+}
+

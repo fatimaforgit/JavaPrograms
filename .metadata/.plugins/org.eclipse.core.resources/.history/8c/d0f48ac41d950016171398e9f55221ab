@@ -1,0 +1,16 @@
+package class_1.FirstProgram;
+// program to demonstrate method chaining in java
+
+class RoughP
+{
+	public static void main(String args[])
+	{
+		
+		byte buff[] = {2,4,5,6};
+		
+		System.out.println(buff[2]);
+			
+	}
+
+	
+}

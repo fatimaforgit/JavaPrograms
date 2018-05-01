@@ -1,0 +1,39 @@
+package SeleniumTraining;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Pop_up_Child_Window_pop_up_example_1 
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://www.irctc.com/displayServlet");
+		
+		driver.findElement(By.linkText("E-Catering")).click();
+		
+		Set<String> windowIDs = driver.getWindowHandles();
+		
+		Iterator it = windowIDs.iterator();
+		
+		
+		while(it.hasNext())
+			
+		{
+			int i=1;			
+			System.out.println("window id of " + i + "  " + it.next());
+			i++;
+		}
+		
+	}
+
+}

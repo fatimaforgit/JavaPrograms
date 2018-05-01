@@ -1,0 +1,17 @@
+package class_1.FirstProgram;
+// program to demonstrate method chaining in java
+
+import java.util.Scanner;
+
+class RoughP
+{
+	public static void main(String args[])
+	{
+		String name[3] ={"name", "is", "new"};
+		
+		  
+		
+	}
+
+	
+}

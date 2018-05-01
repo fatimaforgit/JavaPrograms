@@ -1,0 +1,26 @@
+package class_1.FirstProgram;
+
+import java.util.Scanner;
+
+// program to demonstrate method chaining in java
+
+class RoughP
+{
+	public static void main(String args[])
+	{
+		String s1 = "java";
+		StringBuffer s2 = new StringBuffer(s1);
+		System.out.println(s2);
+		System.out.println(s2.reverse());
+		//Finding if s1 palindrome or not
+		if(s1.equals(s2.toString()))
+		{
+			System.out.println("given string is a palindrome");
+		}
+		else 
+			System.out.println("given string is NOT a palindrome");
+		
+	}
+
+	
+}

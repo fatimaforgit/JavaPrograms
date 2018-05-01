@@ -1,0 +1,27 @@
+package class_1.FirstProgram;
+// program to demonstrate method chaining in java
+
+import java.util.Scanner;
+
+class RoughP
+{
+	public static void main(String args[])
+	{
+		char myname[] ={'n','a','m','e'};
+		System.out.println(myname);
+		
+		try{
+		for(int i=3;i<4;i--)
+		{
+			System.out.print(myname[i]);
+		}
+		}
+		catch(Exception e)
+		{
+		
+		}
+			
+	}
+
+	
+}

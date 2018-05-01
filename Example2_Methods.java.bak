@@ -1,0 +1,27 @@
+public class Example2_Methods 
+{
+
+	public static void main(String[] args) 
+	{
+		int total = int add(); //calling method add()
+		
+		System.out.println("Result is " + total);
+	}
+
+public int add()
+{
+	int x=10;
+	int y=20;
+	int result=x+y;
+	return result;
+
+}
+
+}
+
+
+
+		
+		
+
+	

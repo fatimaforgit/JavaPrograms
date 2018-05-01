@@ -1,0 +1,70 @@
+Tokens: Smallest unit of a program is known as token.
+
+3 tokens in any java program are:
+
+1. Keywords
+2. Identifiers
+3. Literals
+
+Keywords:
+
+Predefined words that has some kind of predefined meaning in programming language.
+
+Ex: class, public, int, float, double, package etc
+
+There are 50 keywords in java.
+
+Rule: keywords should be written in lower case. If written in upper case compile error pops up.
+
+
+Identifiers:
+
+Programmer/user defined words are called identifiers
+
+or
+
+The words for which programmer gives meaning are called identifiers.
+
+ex: name of a class, name of a variable, name of a function name of package, name of interface
+
+Rules:
+1. can be alphanumeric but can not start with numbers
+2. It can contain only 2 special characters underscore and dollar sign ( _ and $ )
+3. It can start with underscore or dollar sign ( _ and $ )
+4. It can include space
+5. keywords cannot be identifiers
+
+Literals:
+
+These are values used in the program. there are 4 types:
+
+1. Numeric literals
+2. Character literals
+3. String literals
+4. Boolean literals
+
+Numeric literals: 
+All numbers written with java program are called numeric literals.These are charaterised into 
+(1)Integer literals 
+(2) Floatng point literals. 
+
+Ex: 10, 4.5, -10, 0, 1 etc.
+
+
+Character literals: 
+any character of the keyboard enclosed within single quote with one character at a time are called character literals. 
+
+Ex: 'A', 'b', '?', ' ', '!', '8' where as '20' is invalid
+
+
+String literal: 
+Anything enclosed within double quotes are called string literals.
+
+Ex:"Hello","#@$%123","A"," ",""(empty string and is allowed)
+
+
+Boolean Literals:
+there are only two boolean literals: True and false. Boolean literals are used to take dicisions. 
+true and false are the only 2 boolean literals hence also called as keywords or reserved words.
+Note:0 and 1 are not boolean literals they are numeric literals in java.
+true and false to be used in small case only.

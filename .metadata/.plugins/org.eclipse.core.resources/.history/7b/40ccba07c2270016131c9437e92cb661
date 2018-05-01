@@ -1,0 +1,29 @@
+package class_1.FirstProgram;
+
+public class Example_MultipleMethods 
+{
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Sum is " + add(20,30)); //print return value-expected result 30
+		System.out.println("New Sum is " + add(1000,30));//print return value-expected result 1030
+
+		//substraction
+		
+		System.out.println("Sum is " + sub(12.11,1.10)); //print return value-expected result 30
+		System.out.println("New Sum is " + sub(1000,30.22));//print return value-expected result 1030
+
+	}
+
+	public static int add(int a, int b) //method for addition of two integer numbers
+	{
+		int sum = a + b ;
+		return sum;
+	}
+	
+	public static double sub(double a, double b)
+	{
+		double sub = a - b ;
+		return sub ;
+	}
+}

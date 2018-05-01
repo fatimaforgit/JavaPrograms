@@ -1,0 +1,62 @@
+package class_1.FirstProgram;
+// program to demonstrate method chaining in java
+
+import java.util.Scanner;
+
+class RoughP
+{
+	public static void main(String args[])
+	{
+		
+		  
+		
+		Scanner s= new Scanner(System.in);
+		System.out.println("enter your option \n");
+		int num=s.nextInt();
+		System.out.println("you entered "+num);
+		humans h= null; 
+		/*switch(num)
+		{
+			case 1:
+			h=new goodHumans();
+			break;
+			
+			case 2:
+			h=new badHumans();
+			break;
+		}
+		if(num!=0)
+		{
+			h.printThiss();
+		}*/
+	}
+
+	
+}
+
+class humans
+{
+		
+	public void printThiss()
+	{
+		System.out.println("human");
+	}
+}
+
+class goodHumans extends human
+{
+	public void printThiss()
+	{
+		System.out.println("good human"); 
+				
+	}
+}
+
+class badHumans extends human
+{
+	public void printThiss()
+	{
+		System.out.println("bad human"); 
+				
+	}
+}

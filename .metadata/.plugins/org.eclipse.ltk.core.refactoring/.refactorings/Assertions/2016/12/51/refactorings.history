@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;TestNG_Project/src/assertions&apos;&#x0D;&#x0A;- Original project: &apos;Assertions&apos;&#x0D;&#x0A;- Destination element: &apos;TestNG_Project/src/assertions&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     testSuite.soft_Assert_example.java&#x0D;&#x0A;     testSuite.hard_Assert_example.java&#x0D;&#x0A;     testSuite.Rough.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=TestNG_Project/src&lt;assertions" element1="/src&lt;testSuite{soft_Assert_example.java" element2="/src&lt;testSuite{hard_Assert_example.java" element3="/src&lt;testSuite{Rough.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1481869220837" units="3" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IEDriverServer.exe&apos; to &apos;BrowserExeFiles&apos;&#x0D;&#x0A;- Original project: &apos;flipkart&apos;&#x0D;&#x0A;- Destination element: &apos;BrowserExeFiles&apos;&#x0D;&#x0A;- Original element: &apos;IEDriverServer.exe&apos;" description="Copy file" element1="BrowserExe/IEDriverServer.exe" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1477894442375" target="/let/BrowserExeFiles" units="0" version="1.0"/>
+</session>

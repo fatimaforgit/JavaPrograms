@@ -1,0 +1,19 @@
+package class_1.FirstProgram;
+
+public class Palindrome_using_StringBuffer_class 
+{
+	public static void main(String args[])
+	{
+		String s1 = "java";
+		StringBuffer s2 = new StringBuffer(s1);
+		System.out.println("printing value of s2 " + s2);
+		
+		//Finding if s1 palindrome or not
+		
+		StringBuffer reverse_of_s1 = s2.reverse();
+		
+		System.out.println("Hence it is mandatory to convert StringBuffer value to string before comparing ");
+		
+	}
+
+}

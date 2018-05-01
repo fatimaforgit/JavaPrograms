@@ -1,0 +1,18 @@
+package class_1.FirstProgram;
+// program to demonstrate method chaining in java
+
+class RoughP
+{
+	public static void main(String args[])
+	{
+		
+		String s1=new String("hello");
+		
+		System.out.println(s1.concat(" you"));
+		System.out.println(s1.replace('l', 'p'));
+		System.out.println(s1.charAt(4));
+			
+	}
+
+	
+}

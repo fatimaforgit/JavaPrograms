@@ -1,0 +1,36 @@
+package com.flipkart.util;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class Helper 
+{
+	public static getExcelData(String fileName, String sheetName, int rowIndex, int cellIndex)
+	{
+		String data=null;
+		try
+		{
+			File f = new File("./testdata."+fileName+".xlsx");
+
+			FileInputStream fis = new FileInputStream(f);
+
+			Workbook wb = WorkbookFactory.create(fis);
+			Sheet s = wb.getSheet("sheetName");
+			//fetching data from second row first column
+			Row r = s.getRow(rowIndex);
+			Cell c = r.getCell(cellIndex);
+
+			data = c.toString();
+		}
+		catch(Exception e)
+		{
+
+		}
+	}
+}

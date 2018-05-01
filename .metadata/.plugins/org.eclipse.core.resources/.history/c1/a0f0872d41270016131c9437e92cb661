@@ -1,0 +1,19 @@
+package class_1.FirstProgram;
+
+public class Example_Method_DumbAssistant 
+{
+	public static void main(String[] args) 
+	{
+		add(10,20); // calling method add()
+		System.out.println("Sum is " + add(10,20));
+	}
+	
+	public static int add(int a, int b)
+	{
+		int Sum;
+		Sum = a + b ;
+		return Sum;
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package class_1.FirstProgram;
+
+public class Example_MethodOverloading 
+{
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+	
+	//for int values
+	public static void min(int x, int y) //creating method 
+	{
+		System.out.println("min for 'integer' values is called");
+	} 
+
+	//for double and int values, by default the java compiler will convert int y to double y
+	public static void min(double x, int y) //method 'min' is overloaded
+	{
+		System.out.println("min for 'double' values is called");
+	}
+	
+	//for int and double values, by default the java compiler will convert int x to double x
+	public static void min(int x, double y) //method 'min' is overloaded again 
+	{
+		System.out.println("min for 'double' values is called");
+	}
+	
+	/*if both the values sent/given are integer then none of the above method will be called 
+	 * and a complile time error will pop up 
+	 * solution is to create another method overloading which is approriate to the requirement
+	 */
+	
+		
+}

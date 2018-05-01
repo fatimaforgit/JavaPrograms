@@ -1,0 +1,26 @@
+package class_1.FirstProgram;
+
+// Program to find length of any string - basic
+/* syntax is anyVariable.length(). 
+ * Here length() is a built in method in java and it falls in " import java.io.*; "
+ * String stringVaraibleName = “abc” ;
+ * System.out.println(stringVaraibleName.length());
+ */
+
+public class LengthOfAnyString_1
+{
+
+	public static void main(String[] args) 
+	{
+		
+		String stringVaraibleName = "abc" ;
+
+		System.out.println("The given string is " + stringVaraibleName);
+		System.out.println("Length of given string is " + stringVaraibleName.length());
+		
+	}
+
+
+
+}
+

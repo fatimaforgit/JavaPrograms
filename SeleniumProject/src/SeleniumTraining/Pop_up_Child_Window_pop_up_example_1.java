@@ -1,0 +1,52 @@
+package SeleniumTraining;
+// goto naukti.com
+//get window id of parent window and all pop windows
+//close all windows except parent window
+//perform action on parent window
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Pop_up_Child_Window_pop_up_example_1 
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("https://www.naukri.com/");
+		
+		//driver.findElement(By.linkText("E-Catering")).click();//
+				
+		Set<String> windowIDs = driver.getWindowHandles();
+		
+		Iterator<String> it = windowIDs.iterator();
+		
+		String windowId1 = it.next();
+		System.out.println("window id of 1 (parent window) "+ windowId1);
+		int i=2;
+		while(it.hasNext())
+			
+		{			
+			String windowId2 = it.next();
+			System.out.println("window id of " + i + "  " + windowId2);
+			driver.switchTo().window(windowId2);
+			driver.manage().window().maximize();
+			Thread.sleep(2000);
+			driver.close();
+			i++;
+		}
+		
+		driver.switchTo().window(windowId1);
+		driver.findElement(By.name("qp")).sendKeys("some text");
+		driver.close();
+	}
+
+}

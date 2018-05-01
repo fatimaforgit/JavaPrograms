@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteNameIsLet">
+  <test name="Test">
+    <classes>
+      <class name="testSuite.hard_Assert_example"/>
+      <class name="testSuite.soft_Assert_example"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- SuiteNameIsLet -->
